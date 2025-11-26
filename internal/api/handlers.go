@@ -4,17 +4,17 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/OPGLOL/opgl-cortex-engine/internal/models"
-	"github.com/OPGLOL/opgl-cortex-engine/internal/services"
+	"github.com/OPGLOL/opgl-cortex-engine-service/internal/models"
+	"github.com/OPGLOL/opgl-cortex-engine-service/internal/services"
 )
 
 // Handler manages HTTP request handlers for the cortex engine
-type Handler struct{
-	analysisService *services.AnalysisService
+type Handler struct {
+	analysisService services.AnalysisServiceInterface
 }
 
 // NewHandler creates a new Handler instance
-func NewHandler(analysisService *services.AnalysisService) *Handler {
+func NewHandler(analysisService services.AnalysisServiceInterface) *Handler {
 	return &Handler{
 		analysisService: analysisService,
 	}

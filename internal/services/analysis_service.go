@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/OPGLOL/opgl-cortex-engine/internal/models"
+	"github.com/OPGLOL/opgl-cortex-engine-service/internal/models"
 )
 
 // AnalysisService performs player performance analysis
